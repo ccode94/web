@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Videos</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" href="ptv.png">
+</head>
+
+<body>
+
+    <h1 style="cursor:pointer;" title="Programming tutorial video streaming"><img src="ptv.png"></h1>
+    <div class="controls">
+        <input type="text" id="search-box" class="search-box" placeholder="Search videos..." oninput="searchVideos()">
+        <!-- Add Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <button class="btn" onclick="startVoiceSearch()"><i class="fas fa-microphone"></i></button>
+        <button class="btn" onclick="toggleDarkMode()"><i class="fas fa-moon"></i> </button>
+
+    </div>
+    <div id="video-container" class="video-container">
+        <!-- Videos will be inserted dynamically -->
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
